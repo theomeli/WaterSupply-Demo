@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 23, 2017 10:28:00 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="watersupply.Sws" table="sws" catalog="watersupplydb" optimistic-lock="version">
+        <id name="swsid" type="java.lang.Integer">
+            <column name="SWSid" />
+            <generator class="identity" />
+        </id>
+        <property name="fkWszid" type="int">
+            <column name="FK_WSZid" not-null="true" />
+        </property>
+        <property name="supply" type="double">
+            <column name="supply" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="coordinateX" type="double">
+            <column name="coordinateX" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="coordinateY" type="double">
+            <column name="coordinateY" precision="22" scale="0" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

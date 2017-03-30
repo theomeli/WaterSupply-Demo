@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 23, 2017 10:28:00 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="watersupply.Sampling" table="sampling" catalog="watersupplydb" optimistic-lock="version">
+        <id name="samplingId" type="int">
+            <column name="samplingID" />
+            <generator class="assigned" />
+        </id>
+        <property name="value" type="double">
+            <column name="value" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="uncertainty" type="double">
+            <column name="uncertainty" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="method" type="string">
+            <column name="method" length="20" not-null="true" />
+        </property>
+        <property name="limits" type="double">
+            <column name="limits" precision="22" scale="0" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

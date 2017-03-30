@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 23, 2017 10:28:00 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="watersupply.SwsSampling" table="sws_sampling" catalog="watersupplydb" optimistic-lock="version">
+        <composite-id name="id" class="watersupply.SwsSamplingId">
+            <key-property name="fkSamplingId" type="int">
+                <column name="FK_SamplingID" />
+            </key-property>
+            <key-property name="fkSwsid" type="int">
+                <column name="FK_SWSid" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>
