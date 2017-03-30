@@ -1,5 +1,5 @@
 # WaterSupply-Demo
-A demo project using hibernate framework and JSF
+A demo project using hibernate framework and JavaServer Faces (JSF)
 
 
 - Each municipality of a country writes down the needs of its citizens in drinking water, delimiting the water supply zones (WSZ). Each municipality can contain many WSZs. 
